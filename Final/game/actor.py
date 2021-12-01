@@ -1,7 +1,7 @@
 from game import constants
-from game.point import point
+from game.point import Point
 
-class actor:
+class Actor:
     def __init__(self):
         """The class constructor.
         
@@ -9,8 +9,8 @@ class actor:
             self (Actor): an instance of Actor.
         """
         self._text = ""
-        self._position = point(0, 0)
-        self._velocity = point(0, 0)
+        self._position = Point(0, 0)
+        self._velocity = Point(0, 0)
         self._width = 0
         self._height = 0
         self._image = ""

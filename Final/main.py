@@ -1,8 +1,8 @@
 import random
 from game import constants
-from game.director import director
-from game.actor import actor
-from game.point import point
+from game.director import Director
+from game.actor import Actor
+from game.point import Point
 from game.input_service import inputservice
 from game.output_service import outputservice
 
@@ -15,3 +15,7 @@ def main():
 
 
     output_service.open_window()
+
+
+    director = Director(cast, script)
+    director.start_game()

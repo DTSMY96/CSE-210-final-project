@@ -1,4 +1,4 @@
-class point:
+class Point:
     def __init__(self, x, y):
         """The class constructor.
         
@@ -22,7 +22,7 @@ class point:
         """
         x = self._x + other.get_x()
         y = self._y + other.get_y()
-        return point(x, y)
+        return Point(x, y)
 
     def equals(self, other):
         """Whether or not this Point is equal to the given one.
@@ -70,7 +70,7 @@ class point:
             Point: A new Point that is scaled.
 
         """
-        return point(self._x * factor, self._y * factor)
+        return Point(self._x * factor, self._y * factor)
 
     def reverse(self):
         """Gets a new Point that is the reverse of this one.

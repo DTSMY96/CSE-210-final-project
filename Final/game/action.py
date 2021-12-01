@@ -1,4 +1,4 @@
-class action:
+class Action:
     def execute(self, cast):
         """Executes the action using the given actors.
 
