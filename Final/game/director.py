@@ -1,7 +1,7 @@
 import pyray
 from game import constants
 
-class Director:
+class director:
     def __init__(self, cast, script):
         """The class constructor.
         
